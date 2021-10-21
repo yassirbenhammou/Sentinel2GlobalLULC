@@ -4,6 +4,14 @@ This Repository contains 7 folders. In the following, we explain the utility of 
 
 1- LULC classes scripts: In this folder you'll find all GEE javascripts used to create Sentinel2GlobalLULC classes. Each one of the 29 LULC classes has a script file able to create its final map, reproject it and process it. Files are organized into subfolders in the same hierchical structure illustrated in Figure 2 of Sentinel2GlobalLULC manuscript. Tu use these scripts, you can open a new file in GEE and copy the content of these script in GEE.
 
-2- 
+2- LULC assets: In this folder you'll find a file "assets_links.txt" that contains links to GEE assets of all LULC classes global map distributions. You can import and vizualise these maps in GEE using the script sample we provide in the other file "assets_manipulation_sample.js" 
+
+3- gHM: In this folder you'll find a GEE script was developed to import, reproject and export the global gHM map. the resulted gHM map was saved as asset, then imported and used in each one of the 29 LULC multi-task scripts saved in "LULC classes scripts" folder. 
+
+4- Reverse geo-referencing: In this folder you'll find a python script to read the exported CSV file of a given LULC class and apply the reverse geo-referencing on their pure tiles coordinates then add the found localization data (country code, locality...etc) to the original CSV files as new columns. When running this script, you can specify the desirable LULC class and the tiles that you wanna apply the geo-referencing on them. 
+
+5- Sentinel-2 images exportation: In this folder you'll find a python script to read the geo-localized CSV files and use pure tile center coordinates of a given LULC to export its corresponding Sentinel-2 satellite tif image through python API of GEE. When running this script, you can specify the desirable LULC class and the tiles that you wanna export from Sentinel-2.
+
+6- Tiff to JPEG conversion: 
 
 
