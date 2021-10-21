@@ -12,6 +12,9 @@ This Repository contains 7 folders. In the following, we explain the utility of 
 
 5- Sentinel-2 images exportation: In this folder you'll find a python script to read the geo-localized CSV files and use pure tile center coordinates of a given LULC to export its corresponding Sentinel-2 satellite tif image through python API of GEE. When running this script, you can specify the desirable LULC class and the tiles that you wanna export from Sentinel-2.
 
-6- Tiff to JPEG conversion: 
+6- Tiff to JPEG conversion: In this folder you'll find a python script to convert the exported GEE tif images into JPEG format.
+
+7- CNN implementation: In this folder you'll find a python script "cross_validation.py" to prepare data partitions that you want to apply deep learning CNN models on them using cross validation. The main script "transferLearning.py" is to train many types of deep learning CNN models on the prepared data using transfer learning and report the test accuracy of the trained models. The third script "utils.py" contains some utility functions that are used by the other python scripts of the same folder. 
+
 
 
